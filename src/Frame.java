@@ -4,6 +4,8 @@ import java.awt.GridLayout;
 import javax.swing.JFrame;
 
 public class Frame extends JFrame {
+
+	private static final long serialVersionUID = 1L;
 	public static String title = "Tower Defense";
 	public static Dimension size = new Dimension(700, 550);
 
@@ -16,7 +18,7 @@ public class Frame extends JFrame {
 
 		init();
 	}
-	
+
 	public void init() {
 		setLayout(new GridLayout(1, 1, 0, 0));
 
@@ -27,6 +29,7 @@ public class Frame extends JFrame {
 	}
 
 	public static void main(String[] args) {
+		@SuppressWarnings("unused")
 		Frame frame = new Frame();
 	}
 }

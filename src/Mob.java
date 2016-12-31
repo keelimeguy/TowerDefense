@@ -3,6 +3,8 @@ import java.awt.Graphics;
 import java.awt.Rectangle;
 
 public class Mob extends Rectangle {
+
+	private static final long serialVersionUID = 1L;
 	public int xCoord, yCoord;
 	public int health, maxHealth = 100;
 	public int healthSpace = 3, healthHeight = 6;
@@ -17,7 +19,7 @@ public class Mob extends Rectangle {
 	public Mob() {
 
 	}
-	
+
 	public void spawnMob(int mobId) {
 		for (int y = 0; y < Screen.room.block.length; y++) {
 			if (Screen.room.block[y][0].groundId == Value.groundRoad) {

@@ -3,6 +3,8 @@ import java.awt.Graphics;
 import java.awt.Rectangle;
 
 public class Block extends Rectangle {
+
+	private static final long serialVersionUID = 1L;
 	public Rectangle towerSquare;
 	public int towerSquareSize = 104;
 	public int airId;

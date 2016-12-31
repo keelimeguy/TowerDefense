@@ -11,6 +11,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
 public class Screen extends JPanel implements Runnable {
+
+	private static final long serialVersionUID = 1L;
 	public Thread thread = new Thread(this);
 	private Frame frame;
 
@@ -204,7 +206,7 @@ public class Screen extends JPanel implements Runnable {
 			// Keep track of and display the game's ups and fps every second
 			if (System.currentTimeMillis() - timer >= 1000) {
 				timer += 1000;
-				frame.setTitle(frame.title + " | ups: " + updates + " | fps: " + frames);
+				frame.setTitle(Frame.title + " | ups: " + updates + " | fps: " + frames);
 				updates = 0;
 				frames = 0;
 			}
